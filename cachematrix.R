@@ -1,7 +1,6 @@
-## Cache matrices operations to save computation
+## Cache matrix operations to save computation
 
-## Write a short comment describing this function
-
+## Function that returns a "matrix" object and can cache matrix inversion
 makeCacheMatrix <- function(x = matrix()) {
   mat = NULL
   inv = NULL
@@ -17,8 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Function to retrieve a matrix inversion value, checks first for cached version
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv <- x$getinv()
